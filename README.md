@@ -1,4 +1,4 @@
-# Containerize Simple Hello World with Docker
+# Hello Flask w/ Docker
 
 A simple web Based project with Python Flask. This is all handled by Docker
 
@@ -9,11 +9,16 @@ A simple web Based project with Python Flask. This is all handled by Docker
 2. The `Dockerfile` contains the following instructions.
 
 `FROM python:3.5`
+
 `RUN pip install Flask==0.11.1`
+
 `RUN useradd -ms /bin/bash admin` this will add a new user admin with its own directory
 `USER admin` set the admin user, by default will be the root user (maybe insecure and risk for security measures). But root users cannot escalate to the host machine (but is hard)
+
 `WORKDIR /app` sets the working directory for any CMD command
+
 `COPY app /app` copies host directory to the container
+
 `CMD ["python", "app.py"]`
 
 ## Build
