@@ -42,3 +42,11 @@ Run commands with exec: run commands on a container
 `docker exec -it [container ID] bash`, this will enter into a bash session
 
 You can also check user and directory with: `whoami` and `pwd`, or `cd /home/admin` or display running processes: `ps aux`
+
+## Credits
+
+ - [David E Lares](https://twitter.com/davidlares3)
+
+## License
+
+ - [MIT](https://opensource.org/licenses/MIT)
